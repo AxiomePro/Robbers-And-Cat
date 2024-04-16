@@ -1,0 +1,2290 @@
+[gd_scene load_steps=42 format=3 uid="uid://dc2550w03fwo3"]
+
+[ext_resource type="ArrayMesh" uid="uid://d1sjvg1x1n7xa" path="res://Map/Building/obj/building_A.obj" id="7_4jbqw"]
+[ext_resource type="ArrayMesh" uid="uid://dlopg2007jc7w" path="res://Map/Building/obj/building_B.obj" id="8_cbq0g"]
+[ext_resource type="ArrayMesh" uid="uid://c4ojxdg17hp4y" path="res://Map/Building/obj/building_C.obj" id="9_t21b1"]
+[ext_resource type="ArrayMesh" uid="uid://rhr07t7egsrj" path="res://Map/Building/obj/base.obj" id="9_vrugq"]
+[ext_resource type="ArrayMesh" uid="uid://dbpodhtqlyguq" path="res://Map/Building/obj/building_D.obj" id="10_c2bar"]
+[ext_resource type="ArrayMesh" uid="uid://b2ntpj3mr83li" path="res://Map/Building/obj/building_F_withoutBase.obj" id="10_v3po0"]
+[ext_resource type="ArrayMesh" uid="uid://cio6aen36xah7" path="res://Map/Building/obj/building_B_withoutBase.obj" id="11_jyubn"]
+[ext_resource type="ArrayMesh" uid="uid://nshl4mvixqfp" path="res://Map/Building/obj/building_E.obj" id="11_wblbc"]
+[ext_resource type="ArrayMesh" uid="uid://cr0fhkowuwj1x" path="res://Map/Building/obj/building_F.obj" id="12_bpvq8"]
+[ext_resource type="ArrayMesh" uid="uid://c4ibq8hkedxy2" path="res://Map/Building/obj/car_hatchback.obj" id="12_d7ubr"]
+[ext_resource type="ArrayMesh" uid="uid://b2ysku3l6oe0s" path="res://Map/Building/obj/car_hatchback_wheel_front_left.obj" id="13_1agun"]
+[ext_resource type="ArrayMesh" uid="uid://cqdb8v1pa21o6" path="res://Map/Building/obj/building_G.obj" id="13_gnou2"]
+[ext_resource type="ArrayMesh" uid="uid://c314nwaa3axnk" path="res://Map/Building/obj/car_hatchback_wheel_front_right.obj" id="14_b1are"]
+[ext_resource type="ArrayMesh" uid="uid://cgfptx1relib2" path="res://Map/Building/obj/building_H.obj" id="14_tdyq4"]
+[ext_resource type="ArrayMesh" uid="uid://cuox2o3io5fqs" path="res://Map/Building/obj/car_hatchback_wheel_rear_left.obj" id="15_r1atx"]
+[ext_resource type="ArrayMesh" uid="uid://c6scjjxvhmtq4" path="res://Map/Building/obj/car_hatchback_wheel_rear_right.obj" id="16_nkcc1"]
+[ext_resource type="ArrayMesh" uid="uid://b0nvsy156n3e3" path="res://Map/Building/obj/car_police.obj" id="17_wglow"]
+[ext_resource type="ArrayMesh" uid="uid://cluy54r0oahkn" path="res://Map/Building/obj/car_police_wheel_front_left.obj" id="18_88ylg"]
+[ext_resource type="ArrayMesh" uid="uid://cwldodgeulmoy" path="res://Map/Building/obj/car_police_wheel_front_right.obj" id="19_kpbub"]
+[ext_resource type="ArrayMesh" uid="uid://dy8rjlrxmqeos" path="res://Map/Building/obj/car_police_wheel_rear_left.obj" id="20_hyb6m"]
+[ext_resource type="ArrayMesh" uid="uid://dowecj6ueb6qr" path="res://Map/Building/obj/car_police_wheel_rear_right.obj" id="21_2t2ku"]
+[ext_resource type="ArrayMesh" uid="uid://co483826dhdbj" path="res://Map/Building/obj/car_sedan.obj" id="22_rx3ns"]
+[ext_resource type="ArrayMesh" uid="uid://4o1u0muxaofl" path="res://Map/Building/obj/car_sedan_wheel_front_left.obj" id="23_styth"]
+[ext_resource type="ArrayMesh" uid="uid://ctithh2v2t8bc" path="res://Map/Building/obj/car_sedan_wheel_front_right.obj" id="24_dlf83"]
+[ext_resource type="ArrayMesh" uid="uid://c131hm06mh17d" path="res://Map/Building/obj/car_sedan_wheel_rear_left.obj" id="25_6bxar"]
+[ext_resource type="ArrayMesh" uid="uid://xfbjx17oux6w" path="res://Map/Building/obj/car_sedan_wheel_rear_right.obj" id="26_roqed"]
+[ext_resource type="ArrayMesh" uid="uid://cmnykblij7qfp" path="res://Map/Building/obj/car_stationwagon.obj" id="27_xwdgi"]
+[ext_resource type="ArrayMesh" uid="uid://tfjv7xnr2vg6" path="res://Map/Building/obj/car_stationwagon_wheel_front_left.obj" id="28_vxwhr"]
+[ext_resource type="ArrayMesh" uid="uid://cjquvcwtgcjph" path="res://Map/Building/obj/car_stationwagon_wheel_front_right.obj" id="29_qck7x"]
+[ext_resource type="ArrayMesh" uid="uid://bin6ui5pq8hvb" path="res://Map/Building/obj/car_stationwagon_wheel_rear_left.obj" id="30_bf6jv"]
+[ext_resource type="ArrayMesh" uid="uid://bb4rd73hw4shb" path="res://Map/Building/obj/car_stationwagon_wheel_rear_right.obj" id="31_lv1ul"]
+[ext_resource type="ArrayMesh" uid="uid://dy2sbu6t3hj42" path="res://Map/Building/obj/car_taxi.obj" id="32_y1oap"]
+[ext_resource type="ArrayMesh" uid="uid://dkdxa4hf4erb8" path="res://Map/Building/obj/car_taxi_wheel_front_left.obj" id="33_45581"]
+[ext_resource type="ArrayMesh" uid="uid://h7junggfsdqe" path="res://Map/Building/obj/car_taxi_wheel_front_right.obj" id="34_umb32"]
+[ext_resource type="ArrayMesh" uid="uid://b1c8lskgde5hu" path="res://Map/Building/obj/car_taxi_wheel_rear_left.obj" id="35_ywldb"]
+[ext_resource type="ArrayMesh" uid="uid://bv6xboph1cpb5" path="res://Map/Building/obj/car_taxi_wheel_rear_right.obj" id="36_fw8do"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ldytn"]
+points = PackedVector3Array(-0.131479, 0.3077, -0.222998, 0.214823, 0.0370452, 0.473144, 0.203823, -0.0130491, 0.448868, 0.214823, 0.0370452, -0.479744, -0.204081, -0.0114432, -0.451356, -0.216944, 0.0370058, 0.473144, 0.110558, 0.364556, -0.0329612, 0.199904, 0.156158, -0.464821, -0.202025, 0.156158, -0.464821, -0.202025, 0.111495, 0.443297, 0.203502, -0.0127726, -0.45476, -0.112679, 0.364556, -0.0329612, -0.204063, -0.0114275, 0.444716, 0.0808045, 0.141244, 0.428466, 0.1034, -0.0245541, -0.32375, 0.214823, 0.12637, 0.264677, -0.216944, 0.126409, 0.264677, 0.185027, 0.0966211, 0.473144, -0.216944, 0.0370058, -0.479744, 0.129358, 0.3077, -0.222998, -0.1034, -0.0207342, 0.324326, 0.1034, -0.0245541, 0.331117, -0.0829257, 0.141244, 0.428466, 0.199904, 0.111456, 0.443297, -0.1034, -0.0207342, -0.317243, -0.187106, 0.0966211, 0.473144, 0.129358, 0.3077, 0.0790221, -0.131479, 0.3077, 0.0790221, -0.216944, 0.111495, 0.309355, 0.214823, 0.111456, 0.309355)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4nemw"]
+points = PackedVector3Array(-0.166556, 0.106348, -0.3767, 0.219087, 0.0404252, 0.404273, -0.215897, 0.0404252, 0.417097, -0.14026, 0.28406, 0.0904357, 0.199976, -0.00624299, -0.389106, 0.133375, 0.298056, -0.279684, -0.203725, -0.0146, -0.366678, 0.100142, -0.03, 0.32806, -0.135524, 0.304661, -0.29142, 0.120758, 0.282573, 0.0835093, -0.203725, -0.0146, 0.382078, -0.215897, 0.104398, -0.324915, 0.219087, 0.11718, -0.27362, 0.193455, 0.129927, 0.365882, 0.186572, 0.130157, -0.374646, 0.100142, -0.03, -0.337285, 0.194816, -0.0146, 0.394184, -0.184565, 0.107281, 0.368473, 0.206594, -0.0143642, -0.341995, 0.140978, 0.281486, -0.0619494, -0.196745, -0.00624299, -0.389106, -0.182478, 0.130187, -0.372779, -0.1034, -0.0212151, -0.319065, 0.206875, -0.0145708, 0.357874, 0.135735, 0.288706, -0.297056, -0.191585, -0.0146, 0.394184, -0.1034, -0.0212151, 0.31114, 0.20682, 0.0337425, -0.366506, -0.172942, 0.0955932, 0.380133, 0.159839, 0.215417, -0.333192, 0.194816, -0.0146, -0.366678)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_i6fcf"]
+points = PackedVector3Array(0.214825, 0.0370233, 0.473144, 0.203751, -0.0141105, 0.448706, 0.214825, 0.0370233, -0.479744, -0.203994, -0.0127201, -0.451164, -0.216944, 0.0370233, 0.473144, 0.129595, 0.306261, 0.0791711, 0.199905, 0.156088, -0.464821, -0.202025, 0.156088, -0.464821, -0.131712, 0.306291, 0.0791697, 0.0808055, 0.141222, 0.428466, 0.130734, 0.3077, -0.225314, 0.203503, -0.0139221, -0.454758, -0.1034, -0.0225915, 0.324327, -0.202025, 0.111456, 0.443297, 0.214825, 0.126357, 0.264677, -0.204063, -0.0127725, 0.444716, 0.1034, -0.0259847, -0.323747, -0.132828, 0.3077, -0.22527, -0.216944, 0.126357, 0.264677, -0.216944, 0.0370233, -0.479744, 0.185028, 0.0965905, 0.473144, 0.1034, -0.0259847, 0.331114, -0.0829253, 0.141222, 0.428466, -0.1034, -0.0225915, -0.317244, -0.187106, 0.0965905, 0.473144, 0.199905, 0.111491, 0.443297, 0.140248, 0.289216, -0.0570046, 0.133496, -0.0146, -0.456633, 0.133496, -0.0146, 0.450033)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0xroo"]
+points = PackedVector3Array(0.214825, 0.0370233, 0.473144, 0.203751, -0.0141105, 0.448706, 0.214825, 0.0370233, -0.479744, 0.130734, 0.3077, -0.350142, -0.216944, 0.0370233, 0.473144, -0.203994, -0.0127201, -0.451164, -0.131712, 0.306291, 0.0791697, -0.157352, 0.290088, -0.390388, 0.199905, 0.126357, 0.428466, 0.129595, 0.306261, 0.0791711, 0.203503, -0.0139221, -0.454758, -0.1034, -0.0225915, 0.324327, -0.202025, 0.141222, -0.464821, -0.202025, 0.126357, 0.428466, 0.185028, 0.200754, -0.435066, -0.204063, -0.0127725, 0.444716, 0.1034, -0.0259847, -0.323747, 0.214825, 0.126357, 0.264677, 0.0808055, 0.111456, 0.473144, -0.216944, 0.126357, 0.264677, -0.216944, 0.0370233, -0.479744, -0.132828, 0.3077, -0.350074, 0.1034, -0.0259847, 0.331114, -0.0829253, 0.156088, 0.398618, 0.199905, 0.141222, -0.464821, -0.1034, -0.0225915, -0.317244, 0.0808055, 0.156088, 0.398618, -0.0829253, 0.111456, 0.473144, 0.140248, 0.289216, -0.0570046, 0.133496, -0.0146, -0.456633, -0.172271, 0.245421, -0.405218, 0.11934, -0.0146, 0.450033)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_136nm"]
+points = PackedVector3Array(-0.216944, 0.126397, -0.271183, 0.214823, 0.0370291, 0.473144, 0.203849, -0.0126721, 0.448925, 0.214823, 0.0370291, -0.479744, 0.0196479, 0.364803, -0.155411, -0.204063, -0.0110012, 0.444716, -0.204109, -0.011042, -0.451417, -0.130919, 0.3077, 0.0786686, -0.202025, 0.156187, -0.464821, 0.128833, 0.3077, 0.0786911, -0.202025, 0.111462, 0.443297, 0.199904, 0.156146, -0.464821, 0.1034, -0.0240767, -0.32375, 0.0808045, 0.141251, 0.428466, 0.203502, -0.0123615, -0.45476, 0.214823, 0.126357, 0.264677, -0.130919, 0.3077, -0.222054, -0.021127, 0.358438, 0.010036, -0.216944, 0.0370291, 0.473144, 0.185027, 0.096608, 0.473144, 0.128833, 0.3077, -0.222114, -0.1034, -0.0201153, 0.324326, -0.216944, 0.0370291, -0.479744, -0.216944, 0.126397, 0.264677, 0.1034, -0.0240767, 0.331117, -0.0829257, 0.141251, 0.428466, -0.1034, -0.0201153, -0.317243, -0.187106, 0.096608, 0.473144, 0.199904, 0.111462, 0.443297, 0.0189678, 0.358438, 0.010036, -0.0215658, 0.362536, -0.153632, 0.139344, 0.29132, -0.0566616)
+
+[node name="BuildingMap" type="Node3D"]
+
+[node name="BuildingB4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -6, 2.08165e-12, 36)
+mesh = ExtResource("8_cbq0g")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="BuildingB4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00368083, 0.793073, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 1.7, 1.2)
+
+[node name="Building_line2" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, -48, -17, 42)
+
+[node name="BuildingA" type="MeshInstance3D" parent="Building_line2"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.08165e-12, 17, 2.08165e-12)
+mesh = ExtResource("7_4jbqw")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Building_line2/BuildingA"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.793073, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.3, 1.7, 1.2)
+
+[node name="BuildingB" type="MeshInstance3D" parent="Building_line2"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6, 17, 2.08165e-12)
+mesh = ExtResource("8_cbq0g")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Building_line2/BuildingB"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00368083, 0.793073, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 1.7, 1.2)
+
+[node name="BuildingC" type="MeshInstance3D" parent="Building_line2"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 12, 17, 2.08165e-12)
+mesh = ExtResource("9_t21b1")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Building_line2/BuildingC"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00327229, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="BuildingD" type="MeshInstance3D" parent="Building_line2"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 18, 17, 2.08165e-12)
+mesh = ExtResource("10_c2bar")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Building_line2/BuildingD"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00530815, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 2.3, 1.2)
+
+[node name="BuildingE" type="MeshInstance3D" parent="Building_line2"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 24, 17, 2.08165e-12)
+mesh = ExtResource("11_wblbc")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Building_line2/BuildingE"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0512948, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingF" type="MeshInstance3D" parent="Building_line2"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 30, 17, 2.08165e-12)
+mesh = ExtResource("12_bpvq8")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Building_line2/BuildingF"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0405579, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingG" type="MeshInstance3D" parent="Building_line2"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 36, 17, 2.08165e-12)
+mesh = ExtResource("13_gnou2")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Building_line2/BuildingG"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.407186, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Building_line2/BuildingG"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.592486, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="BuildingH" type="MeshInstance3D" parent="Building_line2"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, 36, 17, -6)
+mesh = ExtResource("14_tdyq4")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Building_line2/BuildingH"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415528, 1.48231, 0.00256467)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 3.1, 1.2)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Building_line2/BuildingH"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.602126, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="Building_line3" type="Node3D" parent="."]
+transform = Transform3D(1, -3.48787e-16, 3.48787e-16, 3.48787e-16, 1, -3.48787e-16, -3.48787e-16, 3.48787e-16, 1, -48, -17, -54)
+
+[node name="BuildingA" type="MeshInstance3D" parent="Building_line3"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.08165e-12, 17, 2.08165e-12)
+mesh = ExtResource("7_4jbqw")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Building_line3/BuildingA"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.793073, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.3, 1.7, 1.2)
+
+[node name="BuildingB" type="MeshInstance3D" parent="Building_line3"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6, 17, 2.08165e-12)
+mesh = ExtResource("8_cbq0g")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Building_line3/BuildingB"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00368083, 0.793073, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 1.7, 1.2)
+
+[node name="BuildingC" type="MeshInstance3D" parent="Building_line3"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 12, 17, 2.08165e-12)
+mesh = ExtResource("9_t21b1")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Building_line3/BuildingC"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00327229, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="BuildingD" type="MeshInstance3D" parent="Building_line3"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 18, 17, 2.08165e-12)
+mesh = ExtResource("10_c2bar")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Building_line3/BuildingD"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00530815, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 2.3, 1.2)
+
+[node name="BuildingE" type="MeshInstance3D" parent="Building_line3"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 24, 17, 2.08165e-12)
+mesh = ExtResource("11_wblbc")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Building_line3/BuildingE"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0512948, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingF" type="MeshInstance3D" parent="Building_line3"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 30, 17, 2.08165e-12)
+mesh = ExtResource("12_bpvq8")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Building_line3/BuildingF"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0405579, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingG" type="MeshInstance3D" parent="Building_line3"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 36, 17, 2.08165e-12)
+mesh = ExtResource("13_gnou2")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Building_line3/BuildingG"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.407186, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Building_line3/BuildingG"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.592486, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="BuildingH" type="MeshInstance3D" parent="Building_line3"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 42, 17, 2.08165e-12)
+mesh = ExtResource("14_tdyq4")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Building_line3/BuildingH"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415528, 1.48231, 0.00256467)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 3.1, 1.2)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Building_line3/BuildingH"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.602126, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="Building_line4" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, -54, -17, -6)
+
+[node name="BuildingA" type="MeshInstance3D" parent="Building_line4"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.08165e-12, 17, 2.08165e-12)
+mesh = ExtResource("7_4jbqw")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Building_line4/BuildingA"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.793073, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.3, 1.7, 1.2)
+
+[node name="BuildingB" type="MeshInstance3D" parent="Building_line4"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6, 17, 2.08165e-12)
+mesh = ExtResource("8_cbq0g")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Building_line4/BuildingB"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00368083, 0.793073, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 1.7, 1.2)
+
+[node name="BuildingC" type="MeshInstance3D" parent="Building_line4"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 12, 17, 2.08165e-12)
+mesh = ExtResource("9_t21b1")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Building_line4/BuildingC"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00327229, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="BuildingD" type="MeshInstance3D" parent="Building_line4"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 18, 17, 2.08165e-12)
+mesh = ExtResource("10_c2bar")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Building_line4/BuildingD"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00530815, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 2.3, 1.2)
+
+[node name="BuildingE" type="MeshInstance3D" parent="Building_line4"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 24, 17, 2.08165e-12)
+mesh = ExtResource("11_wblbc")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Building_line4/BuildingE"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0512948, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingF" type="MeshInstance3D" parent="Building_line4"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 30, 17, 2.08165e-12)
+mesh = ExtResource("12_bpvq8")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Building_line4/BuildingF"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0405579, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingG" type="MeshInstance3D" parent="Building_line4"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 36, 17, 2.08165e-12)
+mesh = ExtResource("13_gnou2")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Building_line4/BuildingG"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.407186, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Building_line4/BuildingG"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.592486, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="BuildingH" type="MeshInstance3D" parent="Building_line4"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 42, 17, 2.08165e-12)
+mesh = ExtResource("14_tdyq4")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Building_line4/BuildingH"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415528, 1.48231, 0.00256467)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 3.1, 1.2)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Building_line4/BuildingH"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.602126, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="Building_line5" type="Node3D" parent="."]
+transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, 0, -17, 48)
+
+[node name="BuildingA" type="MeshInstance3D" parent="Building_line5"]
+transform = Transform3D(-1.31134e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, -1.31134e-07, 6, 17, -6)
+mesh = ExtResource("7_4jbqw")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Building_line5/BuildingA"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.793073, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.3, 1.7, 1.2)
+
+[node name="BuildingB" type="MeshInstance3D" parent="Building_line5"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6, 17, 2.08165e-12)
+mesh = ExtResource("8_cbq0g")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Building_line5/BuildingB"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00368083, 0.793073, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 1.7, 1.2)
+
+[node name="BuildingC" type="MeshInstance3D" parent="Building_line5"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 12, 17, 2.08165e-12)
+mesh = ExtResource("9_t21b1")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Building_line5/BuildingC"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00327229, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="BuildingD" type="MeshInstance3D" parent="Building_line5"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 18, 17, 2.08165e-12)
+mesh = ExtResource("10_c2bar")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Building_line5/BuildingD"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00530815, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 2.3, 1.2)
+
+[node name="BuildingE" type="MeshInstance3D" parent="Building_line5"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 24, 17, 2.08165e-12)
+mesh = ExtResource("11_wblbc")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Building_line5/BuildingE"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0512948, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingF" type="MeshInstance3D" parent="Building_line5"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 30, 17, 2.08165e-12)
+mesh = ExtResource("12_bpvq8")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Building_line5/BuildingF"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0405579, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingG" type="MeshInstance3D" parent="Building_line5"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 36, 17, 2.08165e-12)
+mesh = ExtResource("13_gnou2")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Building_line5/BuildingG"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.407186, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Building_line5/BuildingG"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.592486, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="BuildingH" type="MeshInstance3D" parent="Building_line5"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 42, 17, 2.08165e-12)
+mesh = ExtResource("14_tdyq4")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Building_line5/BuildingH"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415528, 1.48231, 0.00256467)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 3.1, 1.2)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Building_line5/BuildingH"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.602126, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="BuildingE2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -24, 2.08165e-12, -30)
+mesh = ExtResource("11_wblbc")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="BuildingE2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0512948, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingG2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -24, 2.08165e-12, -36)
+mesh = ExtResource("13_gnou2")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="BuildingG2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.407186, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="BuildingG2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.592486, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="BuildingA2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -24, 2.08165e-12, -42)
+mesh = ExtResource("7_4jbqw")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="BuildingA2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.793073, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.3, 1.7, 1.2)
+
+[node name="Base9" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.99996, 0, -0.0154461, 0, 3, 0, 0.0154461, 0, 2.99996, -30, 2.08165e-12, -36)
+mesh = ExtResource("9_vrugq")
+
+[node name="Base10" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.99996, 0, -0.0154461, 0, 3, 0, 0.0154461, 0, 2.99996, -36, 2.08165e-12, -36)
+mesh = ExtResource("9_vrugq")
+
+[node name="Base11" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.99996, 0, -0.0154461, 0, 3, 0, 0.0154461, 0, 2.99996, -42, 2.08165e-12, -36)
+mesh = ExtResource("9_vrugq")
+
+[node name="BuildingF2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, -30, 2.08165e-12, -42)
+mesh = ExtResource("12_bpvq8")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="BuildingF2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0405579, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="Base12" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.99996, 0, -0.0154461, 0, 3, 0, 0.0154461, 0, 2.99996, -30, 2.08165e-12, -30)
+mesh = ExtResource("9_vrugq")
+
+[node name="Base13" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.99996, 0, -0.0154461, 0, 3, 0, 0.0154461, 0, 2.99996, -36, 2.08165e-12, -30)
+mesh = ExtResource("9_vrugq")
+
+[node name="Base14" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.99996, 0, -0.0154461, 0, 3, 0, 0.0154461, 0, 2.99996, -42, 2.08165e-12, -30)
+mesh = ExtResource("9_vrugq")
+
+[node name="BuildingD2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, -36, 2.08165e-12, -42)
+mesh = ExtResource("10_c2bar")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="BuildingD2"]
+transform = Transform3D(1, -3.20633e-23, 3.55271e-15, 9.21276e-24, 1, -2.64698e-23, -4.97388e-15, 1.03947e-23, 1, -0.00530815, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 2.3, 1.2)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.4802, 6.95, -34.0059)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(19, 13.5, 12)
+
+[node name="BuildingFWithoutBase4" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, 7.48017, -0.2, 3.0059)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase5" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, 7.48017, -6.95, 3.0059)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase2" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, 7.48017, -0.2, -2.9941)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase3" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, 7.48017, -6.95, -2.9941)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase6" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, -3.51983, -0.2, -3.9941)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase7" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, -3.51983, -6.95, -3.9941)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase8" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, 2.48017, -0.2, -3.9941)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase9" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, 2.48017, -6.95, -3.9941)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase10" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(3, -1.04636e-15, 5.24537e-07, 1.04636e-15, 3, -1.04636e-15, -5.24537e-07, 1.04636e-15, 3, 2.48017, -0.2, 4.05101)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase11" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(3, -1.04636e-15, 5.24537e-07, 1.04636e-15, 3, -1.04636e-15, -5.24537e-07, 1.04636e-15, 3, 2.48017, -6.95, 4.05101)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase12" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(3, -1.04636e-15, 5.24537e-07, 1.04636e-15, 3, -1.04636e-15, -5.24537e-07, 1.04636e-15, 3, -3.51983, -0.2, 4.05101)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase13" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(3, -1.04636e-15, 5.24537e-07, 1.04636e-15, 3, -1.04636e-15, -5.24537e-07, 1.04636e-15, 3, -3.51983, -6.95, 4.05101)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase14" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(3.93402e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, 3.93403e-07, -7.51983, -0.2, -2.9941)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase15" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(3.93402e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, 3.93403e-07, -7.51983, -6.95, -2.9941)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase16" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(3.93402e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, 3.93403e-07, -7.51983, -0.2, 3.0059)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase17" type="MeshInstance3D" parent="CSGBox3D"]
+transform = Transform3D(3.93402e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, 3.93403e-07, -7.51983, -6.95, 3.0059)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingH2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, -42, 2.08165e-12, -42)
+mesh = ExtResource("14_tdyq4")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="BuildingH2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415528, 1.48231, 0.00256467)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 3.1, 1.2)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="BuildingH2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.602126, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="BuildingD3" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -30, 2.08165e-12, -24)
+mesh = ExtResource("10_c2bar")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="BuildingD3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00530815, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 2.3, 1.2)
+
+[node name="BuildingB2" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -42, 2.08165e-12, -24)
+mesh = ExtResource("8_cbq0g")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="BuildingB2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00368083, 0.793073, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 1.7, 1.2)
+
+[node name="BuildingC2" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -36, 2.08165e-12, -24)
+mesh = ExtResource("9_t21b1")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="BuildingC2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00327229, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="BuildingBWithoutBase" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.59808, 0, 1.5, 0, 3, 0, -1.5, 0, 2.59808, -24.5397, 0, -24.1491)
+mesh = ExtResource("11_jyubn")
+
+[node name="Base17" type="MeshInstance3D" parent="BuildingBWithoutBase"]
+transform = Transform3D(0.866025, 0, -0.499999, 0, 1, 0, 0.499999, 0, 0.866025, 0.130948, 6.93883e-13, 0.132991)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="BuildingBWithoutBase"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 0.8, 2.08165e-12)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 1.6, 1.2)
+
+[node name="BuildingBWithoutBase3" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.59808, 0, 1.5, 0, 3, 0, -1.5, 0, 2.59808, -54.54, 2.08165e-12, -54.15)
+mesh = ExtResource("11_jyubn")
+
+[node name="Base17" type="MeshInstance3D" parent="BuildingBWithoutBase3"]
+transform = Transform3D(0.866025, 0, -0.499999, 0, 1, 0, 0.499999, 0, 0.866025, 0.130948, 6.93883e-13, 0.132991)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="BuildingBWithoutBase3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 0.8, 2.08165e-12)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 1.6, 1.2)
+
+[node name="BuildingBWithoutBase4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.5, 1.42936e-15, 2.59808, 1.04636e-15, 3, -1.04636e-15, -2.59808, 3.82994e-16, -1.5, -48.15, 2.08165e-12, 48.54)
+mesh = ExtResource("11_jyubn")
+
+[node name="Base17" type="MeshInstance3D" parent="BuildingBWithoutBase4"]
+transform = Transform3D(0.866025, 0, -0.499999, 0, 1, 0, 0.499999, 0, 0.866025, 0.130948, 6.93883e-13, 0.132991)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="BuildingBWithoutBase4"]
+transform = Transform3D(1, -2.87246e-23, 1.49012e-08, 9.51139e-25, 1, 2.15067e-23, -1.12151e-08, 3.93065e-23, 1, 0, 0.8, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 1.6, 1.2)
+
+[node name="BuildingH3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, -12, 2.08165e-12, 6)
+mesh = ExtResource("14_tdyq4")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="BuildingH3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415528, 1.48231, 0.00256467)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 3.1, 1.2)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="BuildingH3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.602126, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="BuildingD4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -6, 2.08165e-12, 6)
+mesh = ExtResource("10_c2bar")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="BuildingD4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00530815, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 2.3, 1.2)
+
+[node name="BuildingE3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, -18, 2.08165e-12, 6)
+mesh = ExtResource("11_wblbc")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="BuildingE3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0512948, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingE4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -6, 2.08165e-12, 12)
+mesh = ExtResource("11_wblbc")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="BuildingE4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0512948, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingC3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, -24, 2.08165e-12, 6)
+mesh = ExtResource("9_t21b1")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="BuildingC3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00327229, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="BuildingD5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, -36, 2.08165e-12, 6)
+mesh = ExtResource("10_c2bar")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="BuildingD5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00530815, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 2.3, 1.2)
+
+[node name="BuildingE5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, -30, 2.08165e-12, 6)
+mesh = ExtResource("11_wblbc")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="BuildingE5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0512948, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingH4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -6, 2.08165e-12, 30)
+mesh = ExtResource("14_tdyq4")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="BuildingH4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415528, 1.48231, 0.00256467)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 3.1, 1.2)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="BuildingH4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.602126, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="BuildingE6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -6, 2.08165e-12, 24)
+mesh = ExtResource("11_wblbc")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="BuildingE6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0512948, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingC4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -6, 2.08165e-12, 18)
+mesh = ExtResource("9_t21b1")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="BuildingC4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00327229, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="BuildingD6" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.93403e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, 3.93403e-07, -12, 2.08165e-12, 36)
+mesh = ExtResource("10_c2bar")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="BuildingD6"]
+transform = Transform3D(1, -2.80412e-23, -1.06577e-15, 1.32349e-23, 1, -1.5246e-23, -1.77636e-15, 2.16185e-23, 1, -0.00530815, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 2.3, 1.2)
+
+[node name="BuildingE7" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.93402e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, 3.93403e-07, -12, 2.08165e-12, 18)
+mesh = ExtResource("11_wblbc")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="BuildingE7"]
+transform = Transform3D(1, -3.68644e-23, -1.06577e-15, 1.32349e-23, 1, -2.01107e-24, 2.66454e-15, 3.04417e-23, 1, -0.0512953, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingC5" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.93402e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, 3.93403e-07, -12, 2.08165e-12, 24)
+mesh = ExtResource("9_t21b1")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="BuildingC5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00327229, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="BuildingE8" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.93403e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, 3.93403e-07, -12, 2.08165e-12, 30)
+mesh = ExtResource("11_wblbc")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="BuildingE8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0512948, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingH5" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.93402e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, 3.93403e-07, -12, 2.08165e-12, 12)
+mesh = ExtResource("14_tdyq4")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="BuildingH5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415528, 1.48231, 0.00256467)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 3.1, 1.2)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="BuildingH5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.602126, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="BuildingE9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 0, -4.52987e-07, 0, 3, 0, 4.52987e-07, 0, -3, -30, 2.08165e-12, 18)
+mesh = ExtResource("11_wblbc")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="BuildingE9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0512948, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingG3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -36, 2.08165e-12, 18)
+mesh = ExtResource("13_gnou2")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="BuildingG3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.407186, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="BuildingG3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.592486, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="Base18" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, -1.04636e-15, 1.04636e-15, 1.04636e-15, 3, -1.04636e-15, -1.04636e-15, 1.04636e-15, 3, -36, 2.08165e-12, 24)
+mesh = ExtResource("9_vrugq")
+
+[node name="Base19" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, -1.04636e-15, 1.04636e-15, 1.04636e-15, 3, -1.04636e-15, -1.04636e-15, 1.04636e-15, 3, -36, 2.08165e-12, 30)
+mesh = ExtResource("9_vrugq")
+
+[node name="Base20" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, -1.04636e-15, 1.04636e-15, 1.04636e-15, 3, -1.04636e-15, -1.04636e-15, 1.04636e-15, 3, -36, 2.08165e-12, 36)
+mesh = ExtResource("9_vrugq")
+
+[node name="Base21" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, -1.04636e-15, 1.04636e-15, 1.04636e-15, 3, -1.04636e-15, -1.04636e-15, 1.04636e-15, 3, -30, 2.08165e-12, 24)
+mesh = ExtResource("9_vrugq")
+
+[node name="Base22" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, -1.04636e-15, 1.04636e-15, 1.04636e-15, 3, -1.04636e-15, -1.04636e-15, 1.04636e-15, 3, -30, 2.08165e-12, 30)
+mesh = ExtResource("9_vrugq")
+
+[node name="Base23" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, -1.04636e-15, 1.04636e-15, 1.04636e-15, 3, -1.04636e-15, -1.04636e-15, 1.04636e-15, 3, -30, 2.08165e-12, 36)
+mesh = ExtResource("9_vrugq")
+
+[node name="Buildings" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.9, 6.95, 29.3)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(12, 13.5, 19)
+
+[node name="BuildingFWithoutBase18" type="MeshInstance3D" parent="Buildings"]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, -3.07274, -0.2, -7.3343)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase19" type="MeshInstance3D" parent="Buildings"]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, -3.07274, -6.95, -7.3343)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase20" type="MeshInstance3D" parent="Buildings"]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, 2.92726, -0.2, -7.3343)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase21" type="MeshInstance3D" parent="Buildings"]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, 2.92726, -6.95, -7.3343)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase22" type="MeshInstance3D" parent="Buildings"]
+transform = Transform3D(3.93402e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, 3.93402e-07, -4.07274, -0.2, 3.6657)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase23" type="MeshInstance3D" parent="Buildings"]
+transform = Transform3D(3.93402e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, 3.93402e-07, -4.07274, -6.95, 3.6657)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase24" type="MeshInstance3D" parent="Buildings"]
+transform = Transform3D(3.93402e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, 3.93402e-07, -4.07274, -0.2, -2.3343)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase25" type="MeshInstance3D" parent="Buildings"]
+transform = Transform3D(3.93402e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, 3.93402e-07, -4.07274, -6.95, -2.3343)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase26" type="MeshInstance3D" parent="Buildings"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, 3.97726, -0.2, -2.3343)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase27" type="MeshInstance3D" parent="Buildings"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, 3.97726, -6.95, -2.3343)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase28" type="MeshInstance3D" parent="Buildings"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, 3.97726, -0.2, 3.6657)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase29" type="MeshInstance3D" parent="Buildings"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, 3.97726, -6.95, 3.6657)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase30" type="MeshInstance3D" parent="Buildings"]
+transform = Transform3D(3, -1.04636e-15, 5.24537e-07, 1.04636e-15, 3, -1.04636e-15, -5.24536e-07, 1.04636e-15, 3, -3.07274, -0.2, 7.6657)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase31" type="MeshInstance3D" parent="Buildings"]
+transform = Transform3D(3, -1.04636e-15, 5.24537e-07, 1.04636e-15, 3, -1.04636e-15, -5.24536e-07, 1.04636e-15, 3, -3.07274, -6.95, 7.6657)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase32" type="MeshInstance3D" parent="Buildings"]
+transform = Transform3D(3, -1.04636e-15, 5.24537e-07, 1.04636e-15, 3, -1.04636e-15, -5.24536e-07, 1.04636e-15, 3, 2.92726, -0.2, 7.6657)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingFWithoutBase33" type="MeshInstance3D" parent="Buildings"]
+transform = Transform3D(3, -1.04636e-15, 5.24537e-07, 1.04636e-15, 3, -1.04636e-15, -5.24536e-07, 1.04636e-15, 3, 2.92726, -6.95, 7.6657)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../..")
+
+[node name="BuildingD7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -24, 2.08165e-12, 24)
+mesh = ExtResource("10_c2bar")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="BuildingD7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00530815, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 2.3, 1.2)
+
+[node name="BuildingB3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -24, 2.08165e-12, 36)
+mesh = ExtResource("8_cbq0g")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="BuildingB3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00368083, 0.793073, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 1.7, 1.2)
+
+[node name="BuildingC6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -24, 2.08165e-12, 30)
+mesh = ExtResource("9_t21b1")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="BuildingC6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00327229, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="Base24" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, -1.04636e-15, 1.04636e-15, 1.04636e-15, 3, -1.04636e-15, -1.04636e-15, 1.04636e-15, 3, -24, 2.08165e-12, 18)
+mesh = ExtResource("9_vrugq")
+
+[node name="BuildingB5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -6, 2.08165e-12, -24)
+mesh = ExtResource("8_cbq0g")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="BuildingB5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00368083, 0.793073, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 1.7, 1.2)
+
+[node name="BuildingH6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -6, 2.08165e-12, -30)
+mesh = ExtResource("14_tdyq4")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="BuildingH6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415528, 1.48231, 0.00256467)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 3.1, 1.2)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="BuildingH6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.602126, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="BuildingC7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -6, 2.08165e-12, -42)
+mesh = ExtResource("9_t21b1")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="BuildingC7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00327229, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="BuildingD8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, -1.31134e-07, -12, 2.08165e-12, -24)
+mesh = ExtResource("10_c2bar")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="BuildingD8"]
+transform = Transform3D(1, -2.80412e-23, -1.06577e-15, 1.32349e-23, 1, -1.5246e-23, -1.77636e-15, 2.16185e-23, 1, -0.00530815, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.6, 2.3, 1.2)
+
+[node name="BuildingE11" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, -1.31134e-07, -12, 2.08165e-12, -42)
+mesh = ExtResource("11_wblbc")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="BuildingE11"]
+transform = Transform3D(1, -3.68644e-23, -1.06577e-15, 1.32349e-23, 1, -2.01107e-24, 2.66454e-15, 3.04417e-23, 1, -0.0512953, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingC8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, -1.31134e-07, -12, 2.08165e-12, -36)
+mesh = ExtResource("9_t21b1")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="BuildingC8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00327229, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="BuildingE12" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, -1.04636e-15, -3, 1.04636e-15, 3, -1.04636e-15, 3, -1.04636e-15, -1.31134e-07, -12, 2.08165e-12, -30)
+mesh = ExtResource("11_wblbc")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="BuildingE12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0512948, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingH7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -6, 2.08165e-12, -36)
+mesh = ExtResource("14_tdyq4")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="BuildingH7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415528, 1.48231, 0.00256467)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 3.1, 1.2)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="BuildingH7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.602126, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="BuildingG" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, -24, 2.08165e-12, -12)
+mesh = ExtResource("13_gnou2")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="BuildingG"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.407186, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="BuildingG"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.592486, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="BuildingH" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 1.04636e-15, 0, 3, 0, -1.04636e-15, 0, 3, -24, 2.08165e-12, -6)
+mesh = ExtResource("14_tdyq4")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="BuildingH"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415528, 1.48231, 0.00256467)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 3.1, 1.2)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="BuildingH"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.602126, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="BuildingE" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, -30, 2.08165e-12, -12)
+mesh = ExtResource("11_wblbc")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="BuildingE"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0512948, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingE10" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 1.04636e-15, 0, 3, 0, -1.04636e-15, 0, 3, -30, 2.08165e-12, -6)
+mesh = ExtResource("11_wblbc")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="BuildingE10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0512948, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.9, 2.3, 1.2)
+
+[node name="BuildingC" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 1.04636e-15, 0, 3, 0, -1.04636e-15, 0, 3, -36, 2.08165e-12, -6)
+mesh = ExtResource("9_t21b1")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="BuildingC"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00327229, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="BuildingH8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, -36, 2.08165e-12, -12)
+mesh = ExtResource("14_tdyq4")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="BuildingH8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415528, 1.48231, 0.00256467)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 3.1, 1.2)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="BuildingH8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.602126, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="BuildingG4" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 1.04636e-15, 0, 3, 0, -1.04636e-15, 0, 3, -42, 2.08165e-12, -6)
+mesh = ExtResource("13_gnou2")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="BuildingG4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.407186, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="BuildingG4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.592486, 1.1658, -0.0966346)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(0.8, 2.3, 1)
+
+[node name="BuildingC9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3, 1.04636e-15, -2.62268e-07, 1.04636e-15, 3, -1.04636e-15, 2.62268e-07, -1.04636e-15, -3, -42, 2.08165e-12, -12)
+mesh = ExtResource("9_t21b1")
+skeleton = NodePath("../..")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="BuildingC9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00327229, 1.1658, 0)
+visibility_range_begin = 4096.0
+calculate_tangents = false
+use_collision = true
+size = Vector3(1.2, 2.3, 1.2)
+
+[node name="BuildingBWithoutBase2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.5, 0, 2.59808, 0, 3, 0, -2.59808, 0, -1.5, -24.1, 2.08165e-12, 18.5)
+mesh = ExtResource("11_jyubn")
+skeleton = NodePath("../outline 1")
+
+[node name="outline 1" type="Node3D" parent="."]
+
+[node name="BuildingFWithoutBase4" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 6.75, -30)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase2" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 6.75, -36)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase6" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 6.75, -48)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase8" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(0.00364854, -0.000137038, 3, -0.00330034, 3, 0.000141127, -3, -0.00330051, 0.00364838, -59, 6.75, -42)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase10" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 6.75, -24)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase12" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 6.75, -18)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase14" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(-6.5567e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 6.75, -6)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase16" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(-6.5567e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 6.75, -12)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase5" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 2.08165e-12, -30)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase3" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 2.08165e-12, -36)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase7" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 2.08165e-12, -48)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase9" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(0.00364854, -0.000137038, 3, -0.00330034, 3, 0.000141127, -3, -0.00330051, 0.00364838, -59, 2.08165e-12, -42)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase11" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 2.08165e-12, -24)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase13" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 2.08165e-12, -18)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase15" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(-6.5567e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 2.08165e-12, -6)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase17" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(-6.5567e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 2.08165e-12, -12)
+mesh = ExtResource("10_v3po0")
+
+[node name="Base52" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, -54)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base53" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, -48)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base54" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, -42)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base55" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, -36)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base56" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, -30)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base57" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, -24)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base58" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, -18)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base59" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, -12)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base60" type="MeshInstance3D" parent="outline 1"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, -6)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="outline 2" type="Node3D" parent="."]
+
+[node name="BuildingFWithoutBase18" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 6.75, 24)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase19" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 6.75, 18)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase20" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 6.75, 6)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase21" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(0.00364854, -0.000137038, 3, -0.00330034, 3, 0.000141127, -3, -0.00330051, 0.00364838, -59, 6.75, 12)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase22" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 6.75, 30)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase23" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 6.75, 36)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase24" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(-6.5567e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 6.75, 48)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase25" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(-6.5567e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 6.75, 42)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase26" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 2.08165e-12, 24)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase27" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 2.08165e-12, 18)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase28" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 2.08165e-12, 6)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase29" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(0.00364854, -0.000137038, 3, -0.00330034, 3, 0.000141127, -3, -0.00330051, 0.00364838, -59, 2.08165e-12, 12)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase30" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 2.08165e-12, 30)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase31" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 2.08165e-12, 36)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase32" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(-6.5567e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 2.08165e-12, 48)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase33" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(-6.5567e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 2.08165e-12, 42)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="Base52" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, 6)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base53" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, 12)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base61" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -54, 2.08165e-12, 12)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base62" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -54, 2.08165e-12, 18)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base63" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -54, 2.08165e-12, 24)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base64" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -54, 2.08165e-12, 30)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base65" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -54, 2.08165e-12, 36)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base66" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -54, 2.08165e-12, 42)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base67" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -54, 2.08165e-12, 48)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base54" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, 18)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base55" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, 24)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base56" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, 30)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base57" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, 36)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base58" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, 42)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base59" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, 48)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base60" type="MeshInstance3D" parent="outline 2"]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, 54)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="outline 3" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, -3.48787e-16, -1, 3.48787e-16, 1, -3.48787e-16, 1, -3.48787e-16, -4.37114e-08, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+
+[node name="BuildingFWithoutBase18" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 6.75, 24)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase19" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 6.75, 18)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase20" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 6.75, 6)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase21" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(0.00364854, -0.000137038, 3, -0.00330034, 3, 0.000141127, -3, -0.00330051, 0.00364838, -59, 6.75, 12)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase22" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 6.75, 30)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase23" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 6.75, 36)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase24" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-6.5567e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 6.75, 48)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase25" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-6.5567e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 6.75, 42)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase26" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 2.08165e-12, 24)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase27" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 2.08165e-12, 18)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase28" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 2.08165e-12, 6)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase29" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(0.00364854, -0.000137038, 3, -0.00330034, 3, 0.000141127, -3, -0.00330051, 0.00364838, -59, 2.08165e-12, 12)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase30" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 2.08165e-12, 30)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase31" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 2.08165e-12, 36)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase32" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-6.5567e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 2.08165e-12, 48)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="BuildingFWithoutBase33" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-6.5567e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 2.08165e-12, 42)
+mesh = ExtResource("10_v3po0")
+skeleton = NodePath("../../outline 1")
+
+[node name="Base42" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-1.31134e-07, 2.09272e-15, 3, 5.85357e-21, 3, -2.09272e-15, -3, -2.57496e-22, -1.31134e-07, -60, 3.97646e-14, 54)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base43" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-1.31134e-07, 2.09272e-15, 3, 5.85357e-21, 3, -2.09273e-15, -3, -2.57496e-22, -1.31134e-07, -60, 3.76717e-14, 48)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base44" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-1.31134e-07, 2.09272e-15, 3, 5.85357e-21, 3, -2.09273e-15, -3, -2.57496e-22, -1.31134e-07, -60, 3.5579e-14, 42)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base45" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-1.31134e-07, 2.09272e-15, 3, 5.85357e-21, 3, -2.09273e-15, -3, -2.57496e-22, -1.31134e-07, -60, 3.34862e-14, 36)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base46" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-1.31134e-07, 2.09272e-15, 3, 5.85357e-21, 3, -2.09273e-15, -3, -2.57496e-22, -1.31134e-07, -60, 3.13935e-14, 30)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base47" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-1.31134e-07, 2.09272e-15, 3, 5.85357e-21, 3, -2.09273e-15, -3, -2.57496e-22, -1.31134e-07, -60, 2.93008e-14, 24)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base48" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-1.31134e-07, 2.09272e-15, 3, 5.85357e-21, 3, -2.09273e-15, -3, -2.57496e-22, -1.31134e-07, -60, 2.72081e-14, 18)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base49" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-1.31134e-07, 2.09272e-15, 3, 5.85357e-21, 3, -2.09273e-15, -3, -2.57496e-22, -1.31134e-07, -60, 2.51153e-14, 12)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base50" type="MeshInstance3D" parent="outline 3"]
+transform = Transform3D(-1.31134e-07, 2.09272e-15, 3, 5.85357e-21, 3, -2.09273e-15, -3, -2.57496e-22, -1.31134e-07, -60, 2.30226e-14, 6.00001)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="outline 4" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, 0, 0, 0)
+
+[node name="BuildingFWithoutBase4" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 6.75, -30)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase2" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 6.75, -36)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase6" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 6.75, -48)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase8" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(0.00364854, -0.000137038, 3, -0.00330034, 3, 0.000141127, -3, -0.00330051, 0.00364838, -59, 6.75, -42)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase10" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 6.75, -24)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase12" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 6.75, -18)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase14" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-6.5567e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 6.75, -6)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase16" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-6.5567e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 6.75, -12)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase5" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 2.08165e-12, -30)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase3" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 2.08165e-12, -36)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase7" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -1.31134e-07, -59, 2.08165e-12, -48)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase9" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(0.00364854, -0.000137038, 3, -0.00330034, 3, 0.000141127, -3, -0.00330051, 0.00364838, -59, 2.08165e-12, -42)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase11" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 2.08165e-12, -24)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase13" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-6.55671e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 2.08165e-12, -18)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase15" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-6.5567e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 2.08165e-12, -6)
+mesh = ExtResource("10_v3po0")
+
+[node name="BuildingFWithoutBase17" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-6.5567e-07, 1.04636e-15, 3, 1.04636e-15, 3, -1.04636e-15, -3, 1.04636e-15, -6.55671e-07, -59, 2.08165e-12, -12)
+mesh = ExtResource("10_v3po0")
+
+[node name="Base26" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, -1.05879e-21, -3, 2.09272e-15, 3, -1.08901e-21, 3, -2.09272e-15, -1.31134e-07, -60, 2.10048e-12, -6)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base27" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, -1.27055e-21, -3, 2.09272e-15, 3, -1.30077e-21, 3, -2.09272e-15, -1.31134e-07, -60, 2.09839e-12, -12)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base28" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, -1.48231e-21, -3, 2.09272e-15, 3, -1.51253e-21, 3, -2.09272e-15, -1.31134e-07, -60, 2.0963e-12, -18)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base29" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, -1.69407e-21, -3, 2.09272e-15, 3, -1.72428e-21, 3, -2.09272e-15, -1.31134e-07, -60, 2.09421e-12, -24)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base30" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, -1.90582e-21, -3, 2.09272e-15, 3, -1.93604e-21, 3, -2.09272e-15, -1.31134e-07, -60, 2.09211e-12, -30)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base31" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, -2.11758e-21, -3, 2.09273e-15, 3, -2.1478e-21, 3, -2.09272e-15, -1.31134e-07, -60, 2.09002e-12, -36)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base32" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, -2.32934e-21, -3, 2.09273e-15, 3, -2.35956e-21, 3, -2.09272e-15, -1.31134e-07, -60, 2.08793e-12, -42)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base33" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, -2.5411e-21, -3, 2.09273e-15, 3, -2.57132e-21, 3, -2.09272e-15, -1.31134e-07, -60, 2.08584e-12, -48)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base34" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, -2.75286e-21, -3, 2.09273e-15, 3, -2.78307e-21, 3, -2.09272e-15, -1.31134e-07, -54, 2.08374e-12, -48)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base42" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, -3.17637e-21, -3, 2.09273e-15, 3, -3.20659e-21, 3, -2.09272e-15, -1.31134e-07, -60, 2.08374e-12, -54)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base35" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, -2.96462e-21, -3, 2.09273e-15, 3, -2.99483e-21, 3, -2.09272e-15, -1.31134e-07, -54, 2.08584e-12, -42)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base36" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, -3.17637e-21, -3, 2.09273e-15, 3, -3.20659e-21, 3, -2.09272e-15, -1.31134e-07, -54, 2.08793e-12, -36)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base37" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, -3.38813e-21, -3, 2.09273e-15, 3, -3.41835e-21, 3, -2.09272e-15, -1.31134e-07, -54, 2.09002e-12, -30)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base38" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, -3.59989e-21, -3, 2.09273e-15, 3, -3.63011e-21, 3, -2.09272e-15, -1.31134e-07, -54, 2.09211e-12, -24)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base39" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, -3.81165e-21, -3, 2.09273e-15, 3, -3.84187e-21, 3, -2.09272e-15, -1.31134e-07, -54, 2.09421e-12, -18)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base40" type="MeshInstance3D" parent="outline 4"]
+transform = Transform3D(-1.31134e-07, -4.02341e-21, -3, 2.09273e-15, 3, -4.05362e-21, 3, -2.09272e-15, -1.31134e-07, -54, 2.08234e-12, -12)
+mesh = ExtResource("9_vrugq")
+skeleton = NodePath("../..")
+
+[node name="Base51" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04637e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, -60)
+mesh = ExtResource("9_vrugq")
+
+[node name="Base41" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04636e-15, 3.31618e-15, 1.04636e-15, 3, -54, 2.08165e-12, 54)
+mesh = ExtResource("9_vrugq")
+
+[node name="Base43" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, -1.04636e-15, 0, 1.04637e-15, 3, -1.04636e-15, 3.31618e-15, 1.04636e-15, 3, -60, 2.08165e-12, 60)
+mesh = ExtResource("9_vrugq")
+
+[node name="Base15" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, -1.04636e-15, 1.04636e-15, 1.04636e-15, 3, -1.04636e-15, -1.04636e-15, 1.04636e-15, 3, -12, 2.08165e-12, -12)
+mesh = ExtResource("9_vrugq")
+
+[node name="Base16" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, -1.04636e-15, 1.04636e-15, 1.04636e-15, 3, -1.04636e-15, -1.04636e-15, 1.04636e-15, 3, -6, 2.08165e-12, -12)
+mesh = ExtResource("9_vrugq")
+
+[node name="Base17" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, -1.04636e-15, 1.04636e-15, 1.04636e-15, 3, -1.04636e-15, -1.04636e-15, 1.04636e-15, 3, -12, 2.08165e-12, -6)
+mesh = ExtResource("9_vrugq")
+
+[node name="Base25" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, -1.04636e-15, 1.04636e-15, 1.04636e-15, 3, -1.04636e-15, -1.04636e-15, 1.04636e-15, 3, -6, 2.08165e-12, -6)
+mesh = ExtResource("9_vrugq")
+
+[node name="Police car" type="StaticBody3D" parent="."]
+transform = Transform3D(2.12504, -9.39785e-16, -0.569402, 7.67331e-16, 2.2, -7.67331e-16, 0.569402, 5.42585e-16, 2.12504, -21.909, 0.45, -22.2495)
+
+[node name="CarPolice" type="MeshInstance3D" parent="Police car"]
+mesh = ExtResource("17_wglow")
+skeleton = NodePath("../..")
+
+[node name="CarPoliceWheelFrontLeft" type="MeshInstance3D" parent="Police car/CarPolice"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("18_88ylg")
+skeleton = NodePath("../../..")
+
+[node name="CarPoliceWheelFrontRight" type="MeshInstance3D" parent="Police car/CarPolice"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("19_kpbub")
+skeleton = NodePath("../../..")
+
+[node name="CarPoliceWheelRearLeft" type="MeshInstance3D" parent="Police car/CarPolice"]
+mesh = ExtResource("20_hyb6m")
+skeleton = NodePath("../../..")
+
+[node name="CarPoliceWheelRearRight" type="MeshInstance3D" parent="Police car/CarPolice"]
+mesh = ExtResource("21_2t2ku")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Police car"]
+shape = SubResource("ConvexPolygonShape3D_ldytn")
+
+[node name="Red car" type="StaticBody3D" parent="."]
+transform = Transform3D(1.94248, -3.17273e-16, 1.03284, 7.67331e-16, 2.2, -7.67331e-16, -1.03284, 1.03775e-15, 1.94248, -5.63379, 0.45, -4.75554)
+
+[node name="CarHatchback" type="MeshInstance3D" parent="Red car"]
+mesh = ExtResource("12_d7ubr")
+skeleton = NodePath("../..")
+
+[node name="CarHatchbackWheelFrontLeft" type="MeshInstance3D" parent="Red car/CarHatchback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("13_1agun")
+skeleton = NodePath("../../..")
+
+[node name="CarHatchbackWheelFrontRight" type="MeshInstance3D" parent="Red car/CarHatchback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("14_b1are")
+skeleton = NodePath("../../..")
+
+[node name="CarHatchbackWheelRearLeft" type="MeshInstance3D" parent="Red car/CarHatchback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("15_r1atx")
+skeleton = NodePath("../../..")
+
+[node name="CarHatchbackWheelRearRight" type="MeshInstance3D" parent="Red car/CarHatchback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("16_nkcc1")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Red car"]
+shape = SubResource("ConvexPolygonShape3D_4nemw")
+
+[node name="Red car2" type="StaticBody3D" parent="."]
+transform = Transform3D(1.94248, -3.17273e-16, 1.03284, 7.67331e-16, 2.2, -7.67331e-16, -1.03284, 1.03775e-15, 1.94248, -13.8971, 0.45, -4.75554)
+
+[node name="CarHatchback" type="MeshInstance3D" parent="Red car2"]
+mesh = ExtResource("12_d7ubr")
+skeleton = NodePath("../..")
+
+[node name="CarHatchbackWheelFrontLeft" type="MeshInstance3D" parent="Red car2/CarHatchback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("13_1agun")
+skeleton = NodePath("../../..")
+
+[node name="CarHatchbackWheelFrontRight" type="MeshInstance3D" parent="Red car2/CarHatchback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("14_b1are")
+skeleton = NodePath("../../..")
+
+[node name="CarHatchbackWheelRearLeft" type="MeshInstance3D" parent="Red car2/CarHatchback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("15_r1atx")
+skeleton = NodePath("../../..")
+
+[node name="CarHatchbackWheelRearRight" type="MeshInstance3D" parent="Red car2/CarHatchback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("16_nkcc1")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Red car2"]
+shape = SubResource("ConvexPolygonShape3D_4nemw")
+
+[node name="Blue car" type="StaticBody3D" parent="."]
+transform = Transform3D(1.90526, -2.80863e-16, 1.1, 7.67331e-16, 2.2, -7.67331e-16, -1.1, 1.04819e-15, 1.90526, -7.39949, 0.45, -4.79607)
+
+[node name="CarSedan" type="MeshInstance3D" parent="Blue car"]
+mesh = ExtResource("22_rx3ns")
+skeleton = NodePath("../..")
+
+[node name="CarSedanWheelFrontLeft" type="MeshInstance3D" parent="Blue car/CarSedan"]
+mesh = ExtResource("23_styth")
+skeleton = NodePath("../../..")
+
+[node name="CarSedanWheelFrontRight" type="MeshInstance3D" parent="Blue car/CarSedan"]
+mesh = ExtResource("24_dlf83")
+skeleton = NodePath("../../..")
+
+[node name="CarSedanWheelRearLeft" type="MeshInstance3D" parent="Blue car/CarSedan"]
+mesh = ExtResource("25_6bxar")
+skeleton = NodePath("../../..")
+
+[node name="CarSedanWheelRearRight" type="MeshInstance3D" parent="Blue car/CarSedan"]
+mesh = ExtResource("26_roqed")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blue car"]
+shape = SubResource("ConvexPolygonShape3D_i6fcf")
+
+[node name="Green car" type="StaticBody3D" parent="."]
+transform = Transform3D(2.06732, -4.58613e-16, 0.752444, 7.67331e-16, 2.2, -7.67331e-16, -0.752444, 9.83498e-16, 2.06732, -8.98552, 0.45, -4.53068)
+
+[node name="CarStationwagon" type="MeshInstance3D" parent="Green car"]
+mesh = ExtResource("27_xwdgi")
+skeleton = NodePath("../..")
+
+[node name="CarStationwagonWheelFrontLeft" type="MeshInstance3D" parent="Green car/CarStationwagon"]
+mesh = ExtResource("28_vxwhr")
+skeleton = NodePath("../../..")
+
+[node name="CarStationwagonWheelFrontRight" type="MeshInstance3D" parent="Green car/CarStationwagon"]
+mesh = ExtResource("29_qck7x")
+skeleton = NodePath("../../..")
+
+[node name="CarStationwagonWheelRearLeft" type="MeshInstance3D" parent="Green car/CarStationwagon"]
+mesh = ExtResource("30_bf6jv")
+skeleton = NodePath("../../..")
+
+[node name="CarStationwagonWheelRearRight" type="MeshInstance3D" parent="Green car/CarStationwagon"]
+mesh = ExtResource("31_lv1ul")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Green car"]
+shape = SubResource("ConvexPolygonShape3D_0xroo")
+
+[node name="Green car2" type="StaticBody3D" parent="."]
+transform = Transform3D(2.06732, -4.58613e-16, 0.752444, 7.67331e-16, 2.2, -7.67331e-16, -0.752444, 9.83498e-16, 2.06732, -12.2823, 0.45, -4.53068)
+
+[node name="CarStationwagon" type="MeshInstance3D" parent="Green car2"]
+mesh = ExtResource("27_xwdgi")
+skeleton = NodePath("../..")
+
+[node name="CarStationwagonWheelFrontLeft" type="MeshInstance3D" parent="Green car2/CarStationwagon"]
+mesh = ExtResource("28_vxwhr")
+skeleton = NodePath("../../..")
+
+[node name="CarStationwagonWheelFrontRight" type="MeshInstance3D" parent="Green car2/CarStationwagon"]
+mesh = ExtResource("29_qck7x")
+skeleton = NodePath("../../..")
+
+[node name="CarStationwagonWheelRearLeft" type="MeshInstance3D" parent="Green car2/CarStationwagon"]
+mesh = ExtResource("30_bf6jv")
+skeleton = NodePath("../../..")
+
+[node name="CarStationwagonWheelRearRight" type="MeshInstance3D" parent="Green car2/CarStationwagon"]
+mesh = ExtResource("31_lv1ul")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Green car2"]
+shape = SubResource("ConvexPolygonShape3D_0xroo")
+
+[node name="Taxi car" type="StaticBody3D" parent="."]
+transform = Transform3D(1.90526, 0, 1.1, 0, 2.2, 0, -1.1, 0, 1.90526, -4.07286, 0.45, -4.83512)
+
+[node name="CarTaxi" type="MeshInstance3D" parent="Taxi car"]
+mesh = ExtResource("32_y1oap")
+skeleton = NodePath("../..")
+
+[node name="CarTaxiWheelFrontLeft" type="MeshInstance3D" parent="Taxi car/CarTaxi"]
+mesh = ExtResource("33_45581")
+skeleton = NodePath("../../..")
+
+[node name="CarTaxiWheelFrontRight" type="MeshInstance3D" parent="Taxi car/CarTaxi"]
+mesh = ExtResource("34_umb32")
+skeleton = NodePath("../../..")
+
+[node name="CarTaxiWheelRearLeft" type="MeshInstance3D" parent="Taxi car/CarTaxi"]
+mesh = ExtResource("35_ywldb")
+skeleton = NodePath("../../..")
+
+[node name="CarTaxiWheelRearRight" type="MeshInstance3D" parent="Taxi car/CarTaxi"]
+mesh = ExtResource("36_fw8do")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Taxi car"]
+shape = SubResource("ConvexPolygonShape3D_136nm")
+
+[node name="Red car3" type="StaticBody3D" parent="."]
+transform = Transform3D(1.94248, -3.17273e-16, 1.03284, 7.67331e-16, 2.2, -7.67331e-16, -1.03284, 1.03775e-15, 1.94248, -8.68014, 0.45, -10.7997)
+
+[node name="CarHatchback" type="MeshInstance3D" parent="Red car3"]
+mesh = ExtResource("12_d7ubr")
+skeleton = NodePath("../..")
+
+[node name="CarHatchbackWheelFrontLeft" type="MeshInstance3D" parent="Red car3/CarHatchback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("13_1agun")
+skeleton = NodePath("../../..")
+
+[node name="CarHatchbackWheelFrontRight" type="MeshInstance3D" parent="Red car3/CarHatchback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("14_b1are")
+skeleton = NodePath("../../..")
+
+[node name="CarHatchbackWheelRearLeft" type="MeshInstance3D" parent="Red car3/CarHatchback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("15_r1atx")
+skeleton = NodePath("../../..")
+
+[node name="CarHatchbackWheelRearRight" type="MeshInstance3D" parent="Red car3/CarHatchback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("16_nkcc1")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Red car3"]
+shape = SubResource("ConvexPolygonShape3D_4nemw")
+
+[node name="Red car4" type="StaticBody3D" parent="."]
+transform = Transform3D(1.94248, -3.17273e-16, 1.03284, 7.67331e-16, 2.2, -7.67331e-16, -1.03284, 1.03775e-15, 1.94248, -12.3707, 0.45, -10.7997)
+
+[node name="CarHatchback" type="MeshInstance3D" parent="Red car4"]
+mesh = ExtResource("12_d7ubr")
+skeleton = NodePath("../..")
+
+[node name="CarHatchbackWheelFrontLeft" type="MeshInstance3D" parent="Red car4/CarHatchback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("13_1agun")
+skeleton = NodePath("../../..")
+
+[node name="CarHatchbackWheelFrontRight" type="MeshInstance3D" parent="Red car4/CarHatchback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("14_b1are")
+skeleton = NodePath("../../..")
+
+[node name="CarHatchbackWheelRearLeft" type="MeshInstance3D" parent="Red car4/CarHatchback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("15_r1atx")
+skeleton = NodePath("../../..")
+
+[node name="CarHatchbackWheelRearRight" type="MeshInstance3D" parent="Red car4/CarHatchback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = ExtResource("16_nkcc1")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Red car4"]
+shape = SubResource("ConvexPolygonShape3D_4nemw")
+
+[node name="Blue car3" type="StaticBody3D" parent="."]
+transform = Transform3D(1.90526, -2.80863e-16, 1.1, 7.67331e-16, 2.2, -7.67331e-16, -1.1, 1.04819e-15, 1.90526, -5.57902, 0.45, -10.8402)
+
+[node name="CarSedan" type="MeshInstance3D" parent="Blue car3"]
+mesh = ExtResource("22_rx3ns")
+skeleton = NodePath("../..")
+
+[node name="CarSedanWheelFrontLeft" type="MeshInstance3D" parent="Blue car3/CarSedan"]
+mesh = ExtResource("23_styth")
+skeleton = NodePath("../../..")
+
+[node name="CarSedanWheelFrontRight" type="MeshInstance3D" parent="Blue car3/CarSedan"]
+mesh = ExtResource("24_dlf83")
+skeleton = NodePath("../../..")
+
+[node name="CarSedanWheelRearLeft" type="MeshInstance3D" parent="Blue car3/CarSedan"]
+mesh = ExtResource("25_6bxar")
+skeleton = NodePath("../../..")
+
+[node name="CarSedanWheelRearRight" type="MeshInstance3D" parent="Blue car3/CarSedan"]
+mesh = ExtResource("26_roqed")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Blue car3"]
+shape = SubResource("ConvexPolygonShape3D_i6fcf")
+
+[node name="Green car4" type="StaticBody3D" parent="."]
+transform = Transform3D(2.06732, -4.58613e-16, 0.752444, 7.67331e-16, 2.2, -7.67331e-16, -0.752444, 9.83498e-16, 2.06732, -13.8653, 0.45, -10.5748)
+
+[node name="CarStationwagon" type="MeshInstance3D" parent="Green car4"]
+mesh = ExtResource("27_xwdgi")
+skeleton = NodePath("../..")
+
+[node name="CarStationwagonWheelFrontLeft" type="MeshInstance3D" parent="Green car4/CarStationwagon"]
+mesh = ExtResource("28_vxwhr")
+skeleton = NodePath("../../..")
+
+[node name="CarStationwagonWheelFrontRight" type="MeshInstance3D" parent="Green car4/CarStationwagon"]
+mesh = ExtResource("29_qck7x")
+skeleton = NodePath("../../..")
+
+[node name="CarStationwagonWheelRearLeft" type="MeshInstance3D" parent="Green car4/CarStationwagon"]
+mesh = ExtResource("30_bf6jv")
+skeleton = NodePath("../../..")
+
+[node name="CarStationwagonWheelRearRight" type="MeshInstance3D" parent="Green car4/CarStationwagon"]
+mesh = ExtResource("31_lv1ul")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Green car4"]
+shape = SubResource("ConvexPolygonShape3D_0xroo")
+
+[node name="Taxi car2" type="StaticBody3D" parent="."]
+transform = Transform3D(1.90526, 0, 1.1, 0, 2.2, 0, -1.1, 0, 1.90526, -10.6524, 0.45, -10.8793)
+
+[node name="CarTaxi" type="MeshInstance3D" parent="Taxi car2"]
+mesh = ExtResource("32_y1oap")
+skeleton = NodePath("../..")
+
+[node name="CarTaxiWheelFrontLeft" type="MeshInstance3D" parent="Taxi car2/CarTaxi"]
+mesh = ExtResource("33_45581")
+skeleton = NodePath("../../..")
+
+[node name="CarTaxiWheelFrontRight" type="MeshInstance3D" parent="Taxi car2/CarTaxi"]
+mesh = ExtResource("34_umb32")
+skeleton = NodePath("../../..")
+
+[node name="CarTaxiWheelRearLeft" type="MeshInstance3D" parent="Taxi car2/CarTaxi"]
+mesh = ExtResource("35_ywldb")
+skeleton = NodePath("../../..")
+
+[node name="CarTaxiWheelRearRight" type="MeshInstance3D" parent="Taxi car2/CarTaxi"]
+mesh = ExtResource("36_fw8do")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Taxi car2"]
+shape = SubResource("ConvexPolygonShape3D_136nm")

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bsv322f1a5h5v"
+path="res://.godot/imported/cactus_small_B.obj-eae3ccaf21c19763e0073436fbc8bab0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cactus_small_B.obj-eae3ccaf21c19763e0073436fbc8bab0.mesh"]
+
+source_file="res://Building/KayKit_Furniture_Bits_1.0_FREE/Assets/obj/cactus_small_B.obj"
+dest_files=["res://.godot/imported/cactus_small_B.obj-eae3ccaf21c19763e0073436fbc8bab0.mesh", "res://.godot/imported/cactus_small_B.obj-eae3ccaf21c19763e0073436fbc8bab0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://jhl8pg7tayfq"
+path="res://.godot/imported/cabinet_medium_decorated.obj-041213e2f4770600283e698df653abce.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cabinet_medium_decorated.obj-041213e2f4770600283e698df653abce.mesh"]
+
+source_file="res://Building/KayKit_Furniture_Bits_1.0_FREE/Assets/obj/cabinet_medium_decorated.obj"
+dest_files=["res://.godot/imported/cabinet_medium_decorated.obj-041213e2f4770600283e698df653abce.mesh", "res://.godot/imported/cabinet_medium_decorated.obj-041213e2f4770600283e698df653abce.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

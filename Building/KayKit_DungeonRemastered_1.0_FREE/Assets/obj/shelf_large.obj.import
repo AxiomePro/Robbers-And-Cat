@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ctr6kdw8s7t1d"
+path="res://.godot/imported/shelf_large.obj-59e8d8638290d98760f4aedff928eae0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/shelf_large.obj-59e8d8638290d98760f4aedff928eae0.mesh"]
+
+source_file="res://Building/KayKit_DungeonRemastered_1.0_FREE/Assets/obj/shelf_large.obj"
+dest_files=["res://.godot/imported/shelf_large.obj-59e8d8638290d98760f4aedff928eae0.mesh", "res://.godot/imported/shelf_large.obj-59e8d8638290d98760f4aedff928eae0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

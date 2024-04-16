@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b2ysku3l6oe0s"
+path="res://.godot/imported/car_hatchback_wheel_front_left.obj-7a5d55fc55772e2738fe38b0368ce795.mesh"
+
+[deps]
+
+files=["res://.godot/imported/car_hatchback_wheel_front_left.obj-7a5d55fc55772e2738fe38b0368ce795.mesh"]
+
+source_file="res://Map/Building/obj/car_hatchback_wheel_front_left.obj"
+dest_files=["res://.godot/imported/car_hatchback_wheel_front_left.obj-7a5d55fc55772e2738fe38b0368ce795.mesh", "res://.godot/imported/car_hatchback_wheel_front_left.obj-7a5d55fc55772e2738fe38b0368ce795.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

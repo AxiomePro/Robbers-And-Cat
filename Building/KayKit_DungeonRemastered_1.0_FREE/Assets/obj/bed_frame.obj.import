@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cm8c3qcnygq27"
+path="res://.godot/imported/bed_frame.obj-0da8518287c0e4ae1b1cccffb7f4fed2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bed_frame.obj-0da8518287c0e4ae1b1cccffb7f4fed2.mesh"]
+
+source_file="res://Building/KayKit_DungeonRemastered_1.0_FREE/Assets/obj/bed_frame.obj"
+dest_files=["res://.godot/imported/bed_frame.obj-0da8518287c0e4ae1b1cccffb7f4fed2.mesh", "res://.godot/imported/bed_frame.obj-0da8518287c0e4ae1b1cccffb7f4fed2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

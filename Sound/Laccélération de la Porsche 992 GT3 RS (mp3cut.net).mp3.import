@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bm3wqmjqokjud"
+path="res://.godot/imported/Laccélération de la Porsche 992 GT3 RS (mp3cut.net).mp3-2423d903bef037774f594498424a1c75.mp3str"
+
+[deps]
+
+source_file="res://Sound/Laccélération de la Porsche 992 GT3 RS (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/Laccélération de la Porsche 992 GT3 RS (mp3cut.net).mp3-2423d903bef037774f594498424a1c75.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

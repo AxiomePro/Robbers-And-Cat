@@ -1,0 +1,162 @@
+[gd_scene load_steps=21 format=3 uid="uid://d1uj2xcfn3ws6"]
+
+[ext_resource type="ArrayMesh" uid="uid://j8aicynvyrgm" path="res://Building/KayKit_Furniture_Bits_1.0_FREE/Assets/obj/pictureframe_large_A.obj" id="1_n0h57"]
+[ext_resource type="ArrayMesh" uid="uid://b62iww4lamiv1" path="res://Building/KayKit_Furniture_Bits_1.0_FREE/Assets/obj/pictureframe_large_B.obj" id="2_3n60t"]
+[ext_resource type="ArrayMesh" uid="uid://ofr0jq5721tp" path="res://Building/KayKit_Furniture_Bits_1.0_FREE/Assets/obj/pictureframe_medium.obj" id="3_um7f1"]
+[ext_resource type="ArrayMesh" uid="uid://685pq3otawy1" path="res://Building/KayKit_Furniture_Bits_1.0_FREE/Assets/obj/pictureframe_small_A.obj" id="4_uunpm"]
+[ext_resource type="ArrayMesh" uid="uid://dkh1ytfcesfmn" path="res://Building/KayKit_Furniture_Bits_1.0_FREE/Assets/obj/pictureframe_small_B.obj" id="5_b0rai"]
+[ext_resource type="ArrayMesh" uid="uid://clv15jpnnm4gq" path="res://Building/KayKit_Furniture_Bits_1.0_FREE/Assets/obj/pictureframe_small_C.obj" id="6_dr8ea"]
+[ext_resource type="ArrayMesh" uid="uid://drs7avftuf6gn" path="res://Building/KayKit_Furniture_Bits_1.0_FREE/Assets/obj/pictureframe_standing_A.obj" id="7_e7sgo"]
+[ext_resource type="ArrayMesh" uid="uid://b33rxb6kt7c1h" path="res://Building/KayKit_Furniture_Bits_1.0_FREE/Assets/obj/pictureframe_standing_B.obj" id="8_gd6x5"]
+[ext_resource type="Texture2D" uid="uid://cr8fxdsf15xy8" path="res://Image/hoppy1.jpg" id="9_821d2"]
+[ext_resource type="Texture2D" uid="uid://vpt52ge15sob" path="res://Image/hoppy2.jpg" id="10_a1qq3"]
+[ext_resource type="Texture2D" uid="uid://ckubw3406wm6c" path="res://Image/hoppy3.jpg" id="11_wghqc"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_8im82"]
+size = Vector2(3, 2)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_f7ml7"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pns7s"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = SubResource("ViewportTexture_f7ml7")
+
+[sub_resource type="QuadMesh" id="QuadMesh_bisu3"]
+size = Vector2(3, 2)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_pd0ky"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cwou4"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = SubResource("ViewportTexture_pd0ky")
+
+[sub_resource type="QuadMesh" id="QuadMesh_qnrr5"]
+size = Vector2(3, 2)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_c2i43"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ydus5"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = SubResource("ViewportTexture_c2i43")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="PictureframeSmallA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 7, 2.08165e-12)
+mesh = ExtResource("4_uunpm")
+
+[node name="PictureframeSmallB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 6, 2.08165e-12)
+mesh = ExtResource("5_b0rai")
+
+[node name="PictureframeSmallC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 5, 2.08165e-12)
+mesh = ExtResource("6_dr8ea")
+
+[node name="PictureframeStandingA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 4, 2.08165e-12)
+mesh = ExtResource("7_e7sgo")
+
+[node name="PictureframeStandingB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 3, 2.08165e-12)
+mesh = ExtResource("8_gd6x5")
+
+[node name="Hoppy2" type="Node3D" parent="."]
+
+[node name="SubViewport" type="SubViewport" parent="Hoppy2"]
+gui_embed_subwindows = true
+size = Vector2i(560, 360)
+render_target_update_mode = 4
+
+[node name="Panel" type="Panel" parent="Hoppy2/SubViewport"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Hoppy1" type="Sprite2D" parent="Hoppy2/SubViewport/Panel"]
+position = Vector2(332, 196.5)
+scale = Vector2(0.165, 0.216111)
+texture = ExtResource("9_821d2")
+
+[node name="Quad" type="MeshInstance3D" parent="Hoppy2"]
+transform = Transform3D(0.65, 0, 0, 0, 0.57, 0, 0, 0, 0.57, 0, 9.1291, 0.188933)
+mesh = SubResource("QuadMesh_8im82")
+surface_material_override/0 = SubResource("StandardMaterial3D_pns7s")
+
+[node name="PictureframeLargeB" type="MeshInstance3D" parent="Hoppy2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 9.15, 2.08165e-12)
+mesh = ExtResource("2_3n60t")
+skeleton = NodePath("../..")
+
+[node name="Hoppy1" type="Node3D" parent="."]
+
+[node name="PictureframeLargeA" type="MeshInstance3D" parent="Hoppy1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 10.5, 2.08165e-12)
+mesh = ExtResource("1_n0h57")
+skeleton = NodePath("../..")
+
+[node name="SubViewport" type="SubViewport" parent="Hoppy1"]
+gui_embed_subwindows = true
+size = Vector2i(310, 410)
+render_target_update_mode = 4
+
+[node name="Panel" type="Panel" parent="Hoppy1/SubViewport"]
+anchors_preset = -1
+anchor_right = 0.162
+anchor_bottom = 0.382
+offset_right = 0.96
+offset_bottom = 0.439966
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Hoppy2" type="Sprite2D" parent="Hoppy1/SubViewport/Panel"]
+position = Vector2(156, 209)
+scale = Vector2(0.0501302, 0.0501302)
+texture = ExtResource("10_a1qq3")
+
+[node name="Quad" type="MeshInstance3D" parent="Hoppy1"]
+transform = Transform3D(0.33, 0, 0, 0, 0.49, 0, 0, 0, 0.95, 2.08165e-12, 10.5054, 0.17)
+mesh = SubResource("QuadMesh_bisu3")
+surface_material_override/0 = SubResource("StandardMaterial3D_cwou4")
+
+[node name="Hoppy3" type="Node3D" parent="."]
+
+[node name="PictureframeMedium" type="MeshInstance3D" parent="Hoppy3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 8, 2.08165e-12)
+mesh = ExtResource("3_um7f1")
+skeleton = NodePath("../..")
+
+[node name="SubViewport" type="SubViewport" parent="Hoppy3"]
+gui_embed_subwindows = true
+size = Vector2i(310, 410)
+render_target_update_mode = 4
+
+[node name="Panel" type="Panel" parent="Hoppy3/SubViewport"]
+anchors_preset = -1
+anchor_right = 0.162
+anchor_bottom = 0.382
+offset_right = 0.96
+offset_bottom = 0.439967
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Hoppy3" type="Sprite2D" parent="Hoppy3/SubViewport/Panel"]
+position = Vector2(151, 217)
+scale = Vector2(0.134921, 0.134921)
+texture = ExtResource("11_wghqc")
+
+[node name="Quad" type="MeshInstance3D" parent="Hoppy3"]
+transform = Transform3D(0.2, 0, 0, 0, 0.42, 0, 0, 0, 1, 2.08165e-12, 7.99812, 0.16)
+mesh = SubResource("QuadMesh_qnrr5")
+surface_material_override/0 = SubResource("StandardMaterial3D_ydus5")

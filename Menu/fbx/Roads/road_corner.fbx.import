@@ -1,0 +1,41 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cn8u6dmcdlw84"
+path="res://.godot/imported/road_corner.fbx-2174e32edee24816541d4ae1335dc42a.scn"
+
+[deps]
+
+source_file="res://Menu/fbx/Roads/road_corner.fbx"
+dest_files=["res://.godot/imported/road_corner.fbx-2174e32edee24816541d4ae1335dc42a.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"materials": {
+"citybits_texture": {
+"use_external/enabled": true,
+"use_external/path": "res://Building/fbx/Roads/road_corner_curved-60f8de19b00de00e7ebe9b0557c2af20_citybits_texture.png"
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1

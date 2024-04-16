@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dcuoeviy4cg85"
+path="res://.godot/imported/firehydrant.obj-7ab0f0c847000e6d351f9858e111cb3e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/firehydrant.obj-7ab0f0c847000e6d351f9858e111cb3e.mesh"]
+
+source_file="res://Map/Building/obj/firehydrant.obj"
+dest_files=["res://.godot/imported/firehydrant.obj-7ab0f0c847000e6d351f9858e111cb3e.mesh", "res://.godot/imported/firehydrant.obj-7ab0f0c847000e6d351f9858e111cb3e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

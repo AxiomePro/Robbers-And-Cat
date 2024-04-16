@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://dr20w7kuk23ea"]
+
+[ext_resource type="Texture2D" uid="uid://ckubw3406wm6c" path="res://Image/hoppy3.jpg" id="2_3lowt"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ajf0t"]
+
+[sub_resource type="QuadMesh" id="1"]
+size = Vector2(3, 2)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_803pe"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="3"]
+resource_local_to_scene = true
+transparency = 1
+shading_mode = 0
+albedo_texture = SubResource("ViewportTexture_803pe")
+
+[node name="GUIPanel3D" type="Node3D"]
+process_mode = 3
+
+[node name="SubViewport" type="SubViewport" parent="."]
+gui_embed_subwindows = true
+size = Vector2i(310, 410)
+render_target_update_mode = 4
+
+[node name="Panel" type="Panel" parent="SubViewport"]
+anchors_preset = -1
+anchor_right = 0.162
+anchor_bottom = 0.382
+offset_right = 0.96
+offset_bottom = 0.439967
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Hoppy3" type="Sprite2D" parent="SubViewport/Panel"]
+material = SubResource("CanvasItemMaterial_ajf0t")
+position = Vector2(151, 217)
+scale = Vector2(0.134921, 0.134921)
+texture = ExtResource("2_3lowt")
+
+[node name="Quad" type="MeshInstance3D" parent="."]
+mesh = SubResource("1")
+surface_material_override/0 = SubResource("3")

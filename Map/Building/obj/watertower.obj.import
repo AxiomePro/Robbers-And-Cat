@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bt46ofhqgnukh"
+path="res://.godot/imported/watertower.obj-f7def6082a0741e9ebc6919489d98a13.mesh"
+
+[deps]
+
+files=["res://.godot/imported/watertower.obj-f7def6082a0741e9ebc6919489d98a13.mesh"]
+
+source_file="res://Map/Building/obj/watertower.obj"
+dest_files=["res://.godot/imported/watertower.obj-f7def6082a0741e9ebc6919489d98a13.mesh", "res://.godot/imported/watertower.obj-f7def6082a0741e9ebc6919489d98a13.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

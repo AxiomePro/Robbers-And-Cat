@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://kwss0afsxec"
+path="res://.godot/imported/armchair_pillows.obj-6c210b232e34f7a114c15d2f042296cd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/armchair_pillows.obj-6c210b232e34f7a114c15d2f042296cd.mesh"]
+
+source_file="res://Building/KayKit_Furniture_Bits_1.0_FREE/Assets/obj/armchair_pillows.obj"
+dest_files=["res://.godot/imported/armchair_pillows.obj-6c210b232e34f7a114c15d2f042296cd.mesh", "res://.godot/imported/armchair_pillows.obj-6c210b232e34f7a114c15d2f042296cd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bujsu6doxd40s"
+path="res://.godot/imported/chair_stool_wood.obj-fd9190cc81e18d1ffa8a6f1546e16403.mesh"
+
+[deps]
+
+files=["res://.godot/imported/chair_stool_wood.obj-fd9190cc81e18d1ffa8a6f1546e16403.mesh"]
+
+source_file="res://Building/KayKit_Furniture_Bits_1.0_FREE/Assets/obj/chair_stool_wood.obj"
+dest_files=["res://.godot/imported/chair_stool_wood.obj-fd9190cc81e18d1ffa8a6f1546e16403.mesh", "res://.godot/imported/chair_stool_wood.obj-fd9190cc81e18d1ffa8a6f1546e16403.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

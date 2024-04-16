@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://buoakargvckjw"
+path="res://.godot/imported/wall_Tsplit_sloped.obj-608295a1a152b93ac8b96db4aec7465e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall_Tsplit_sloped.obj-608295a1a152b93ac8b96db4aec7465e.mesh"]
+
+source_file="res://Building/KayKit_DungeonRemastered_1.0_FREE/Assets/obj/wall_Tsplit_sloped.obj"
+dest_files=["res://.godot/imported/wall_Tsplit_sloped.obj-608295a1a152b93ac8b96db4aec7465e.mesh", "res://.godot/imported/wall_Tsplit_sloped.obj-608295a1a152b93ac8b96db4aec7465e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

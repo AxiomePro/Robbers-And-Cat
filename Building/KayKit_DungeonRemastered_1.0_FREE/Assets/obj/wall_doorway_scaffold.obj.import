@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://tvwekc81mtvf"
+path="res://.godot/imported/wall_doorway_scaffold.obj-b87acb32a39735c0835e58e28fc1f17d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall_doorway_scaffold.obj-b87acb32a39735c0835e58e28fc1f17d.mesh"]
+
+source_file="res://Building/KayKit_DungeonRemastered_1.0_FREE/Assets/obj/wall_doorway_scaffold.obj"
+dest_files=["res://.godot/imported/wall_doorway_scaffold.obj-b87acb32a39735c0835e58e28fc1f17d.mesh", "res://.godot/imported/wall_doorway_scaffold.obj-b87acb32a39735c0835e58e28fc1f17d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

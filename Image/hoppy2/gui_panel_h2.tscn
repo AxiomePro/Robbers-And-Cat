@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://dr20w7kuk23ea"]
+
+[ext_resource type="Texture2D" uid="uid://cv5jskm44ub5i" path="res://Image/hoppy8.jpg" id="1_8dhl8"]
+[ext_resource type="Script" path="res://Building/Hoppy.gd" id="1_thdy1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cn06k"]
+albedo_texture = ExtResource("1_8dhl8")
+
+[sub_resource type="QuadMesh" id="QuadMesh_tgfxw"]
+material = SubResource("StandardMaterial3D_cn06k")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_va8dy"]
+points = PackedVector3Array(-0.507937, -0.507937, -0.00793651, 0.507937, 0.507937, 0.00793651, 0.507937, 0.507937, -0.00793651, -0.507937, 0.507937, 0.00793651, 0.507937, -0.507937, 0.00793651, 0.507937, -0.507937, -0.00793651, -0.507937, 0.507937, -0.00793651, -0.507937, -0.507937, 0.00793651)
+
+[node name="GUIPanel3D" type="StaticBody3D"]
+process_mode = 3
+script = ExtResource("1_thdy1")
+
+[node name="Quad" type="MeshInstance3D" parent="."]
+mesh = SubResource("QuadMesh_tgfxw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_va8dy")

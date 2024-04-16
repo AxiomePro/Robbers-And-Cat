@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b0h6uo4m3bx00"
+path="res://.godot/imported/trunk_medium_A.obj-bfd471b37a977fde4f3aa0bc43c09dea.mesh"
+
+[deps]
+
+files=["res://.godot/imported/trunk_medium_A.obj-bfd471b37a977fde4f3aa0bc43c09dea.mesh"]
+
+source_file="res://Building/KayKit_DungeonRemastered_1.0_FREE/Assets/obj/trunk_medium_A.obj"
+dest_files=["res://.godot/imported/trunk_medium_A.obj-bfd471b37a977fde4f3aa0bc43c09dea.mesh", "res://.godot/imported/trunk_medium_A.obj-bfd471b37a977fde4f3aa0bc43c09dea.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

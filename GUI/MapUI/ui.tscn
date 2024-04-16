@@ -1,0 +1,67 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwnc4ewvov06i"]
+
+[ext_resource type="Script" path="res://GUI/MapUI/ui.gd" id="1_p1jl0"]
+[ext_resource type="Shader" path="res://GUI/MapUI/ui.gdshader" id="2_sb0uu"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0m3qv"]
+shader = ExtResource("2_sb0uu")
+shader_parameter/amount = 3.0
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 676.0
+offset_top = 338.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 3
+script = ExtResource("1_p1jl0")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_0m3qv")
+layout_mode = 0
+offset_left = -689.0
+offset_top = -351.0
+offset_right = 1260.0
+offset_bottom = 754.0
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.228
+anchor_top = -0.025
+anchor_right = 0.486
+anchor_bottom = 0.094
+offset_left = -302.1
+offset_top = 21.1
+offset_right = -603.95
+offset_bottom = -39.336
+mouse_filter = 2
+mouse_default_cursor_shape = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+mouse_default_cursor_shape = 3
+
+[node name="Braquer" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 50
+text = "Commencer le braquage"
+
+[node name="Reprendre" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 50
+text = "Reprendre"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Braquer" to="." method="_on_braquer_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Reprendre" to="." method="_on_reprendre_pressed"]

@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://bjkdbvn8sasbo"]
+
+[ext_resource type="PackedScene" uid="uid://birgnbwpj7xvm" path="res://Map/road_map.tscn" id="1_76yy0"]
+[ext_resource type="PackedScene" uid="uid://dc2550w03fwo3" path="res://Map/building_map.tscn" id="2_30gjq"]
+[ext_resource type="ArrayMesh" uid="uid://bln7gwqll5lxi" path="res://Map/Building/obj/road_junction.obj" id="2_ejbie"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_8jy4y"]
+
+[node name="FinalMap" type="Node3D"]
+
+[node name="Roads" type="Node3D" parent="."]
+
+[node name="RoadMap2" parent="Roads" instance=ExtResource("1_76yy0")]
+transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, 4.1633e-12, 4.1633e-12, 4.1633e-12)
+
+[node name="RoadMap" parent="Roads" instance=ExtResource("1_76yy0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+
+[node name="RoadJunction3" type="MeshInstance3D" parent="Roads"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.1633e-12, 4.1633e-12, 4.1633e-12)
+mesh = ExtResource("2_ejbie")
+skeleton = NodePath("../RoadMap")
+
+[node name="Buildings" type="Node3D" parent="."]
+
+[node name="BuildingMap" parent="Buildings" instance=ExtResource("2_30gjq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+
+[node name="BuildingMap2" parent="Buildings" instance=ExtResource("2_30gjq")]
+transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+
+[node name="Bounds" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Bounds"]
+transform = Transform3D(-2.62268e-07, 1.04636e-15, 6, 2.09272e-15, 3, -2.09272e-15, -6, 1.04636e-15, -2.62268e-07, -57.2, 1.7, 2.08165e-12)
+transparency = 0.75
+mesh = SubResource("QuadMesh_8jy4y")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Bounds"]
+transform = Transform3D(-2.62268e-07, -1.04636e-15, -6, 2.09272e-15, 3, -2.09272e-15, 6, -1.04636e-15, -2.62268e-07, 57.2, 1.7, 2.08165e-12)
+transparency = 0.75
+mesh = SubResource("QuadMesh_8jy4y")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Bounds"]
+transform = Transform3D(-6, 1.04636e-15, -5.24537e-07, 2.09272e-15, 3, -2.09272e-15, 5.24537e-07, -1.04636e-15, -6, 2.08165e-12, 1.7, 57.2)
+transparency = 0.75
+mesh = SubResource("QuadMesh_8jy4y")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Bounds"]
+transform = Transform3D(6, -1.04636e-15, 2.09272e-15, 2.09272e-15, 3, -2.09272e-15, -2.09272e-15, 1.04636e-15, 6, 2.08165e-12, 1.7, -57.2)
+transparency = 0.75
+mesh = SubResource("QuadMesh_8jy4y")
+skeleton = NodePath("../..")

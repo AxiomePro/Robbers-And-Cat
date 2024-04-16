@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dkh1ytfcesfmn"
+path="res://.godot/imported/pictureframe_small_B.obj-1a74a72781ab1dd3bdc77a8be12831fe.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pictureframe_small_B.obj-1a74a72781ab1dd3bdc77a8be12831fe.mesh"]
+
+source_file="res://Building/KayKit_Furniture_Bits_1.0_FREE/Assets/obj/pictureframe_small_B.obj"
+dest_files=["res://.godot/imported/pictureframe_small_B.obj-1a74a72781ab1dd3bdc77a8be12831fe.mesh", "res://.godot/imported/pictureframe_small_B.obj-1a74a72781ab1dd3bdc77a8be12831fe.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

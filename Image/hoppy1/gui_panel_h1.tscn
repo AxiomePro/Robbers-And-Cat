@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=3 uid="uid://dvl383ispakmn"]
+
+[ext_resource type="Script" path="res://Building/Hoppy.gd" id="1_6d3iu"]
+[ext_resource type="ArrayMesh" uid="uid://b33rxb6kt7c1h" path="res://Building/KayKit_Furniture_Bits_1.0_FREE/Assets/obj/pictureframe_standing_B.obj" id="2_itlso"]
+[ext_resource type="Texture2D" uid="uid://cr8fxdsf15xy8" path="res://Image/hoppy1.jpg" id="2_xr1nq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ecgj2"]
+albedo_texture = ExtResource("2_xr1nq")
+
+[sub_resource type="QuadMesh" id="QuadMesh_1vy0d"]
+material = SubResource("StandardMaterial3D_ecgj2")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_g2fy7"]
+points = PackedVector3Array(-0.328513, 0.00523095, -0.00268338, 0.330927, 0.462682, 0.0187026, 0.337501, 0.449343, 0.0289432, 0.0946276, 0.0490528, -0.181478, -0.331814, 0.409744, -0.141731, 0.327412, 0.0694252, 0.166338, -0.320422, 0.103929, 0.162638, 0.325349, 0.395766, -0.149619, -0.337508, 0.44933, 0.028941, 0.328553, 0.00523095, -0.00268338, -0.0629401, 0.00745973, -0.170603, -0.332129, 0.0563103, 0.158139, 0.320257, 0.444931, 0.0385374, -0.104538, 0.0606382, -0.180388, -0.330986, 0.462751, -0.00264395, 0.316484, 0.417762, -0.129231, 0.330518, 0.00386811, 0.0186697, -0.325309, 0.395766, -0.149619, -0.335481, 0.0182346, -0.0131374, 0.320459, 0.10393, 0.162637, 0.335476, 0.018221, -0.0131377, -0.320219, 0.444931, 0.0385375, 0.335524, 0.364129, -0.138972, 0.340898, 0.0680214, 0.157164, 0.315476, 0.0490922, 0.144531, -0.330501, 0.00385165, 0.0186716, 0.062914, 0.00745973, -0.170603, -0.335529, 0.364121, -0.138964, -0.34091, 0.0680281, 0.157157, 0.341323, 0.409092, -0.119909, -0.341331, 0.409083, -0.119902, 0.316446, 0.459973, -0.0131707)
+
+[node name="GUIPanel3D" type="StaticBody3D"]
+process_mode = 3
+script = ExtResource("1_6d3iu")
+
+[node name="Quad" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, -1.87232e-16, 1.63876e-16, 1.63876e-16, 0.375877, 0.17101, -2.34039e-16, -0.136808, 0.469846, -0.928302, -0.115896, 0.0537467)
+mesh = SubResource("QuadMesh_1vy0d")
+
+[node name="PictureframeStandingB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, -3.48787e-16, 3.48787e-16, 3.48787e-16, 1, -3.48787e-16, -3.48787e-16, 3.48787e-16, 1, -0.938446, -0.355721, -0.00669837)
+mesh = ExtResource("2_itlso")
+skeleton = NodePath("../../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, -3.48787e-16, 3.48787e-16, 3.48787e-16, 1, -3.48787e-16, -3.48787e-16, 3.48787e-16, 1, -0.938446, -0.355721, -0.00669837)
+shape = SubResource("ConvexPolygonShape3D_g2fy7")

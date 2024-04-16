@@ -1,0 +1,36 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ne8qe4u8wuac"
+path.s3tc="res://.godot/imported/rug_oval_B-decbd2e65ba1f1bb446aed4d7b78a3ee_furniturebits_texture.png-4e8af12e089ef7338146b0f7d7021a18.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={}
+
+[deps]
+
+source_file="res://Building/KayKit_Furniture_Bits_1.0_FREE/Assets/fbx/rug_oval_B-decbd2e65ba1f1bb446aed4d7b78a3ee_furniturebits_texture.png"
+dest_files=["res://.godot/imported/rug_oval_B-decbd2e65ba1f1bb446aed4d7b78a3ee_furniturebits_texture.png-4e8af12e089ef7338146b0f7d7021a18.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

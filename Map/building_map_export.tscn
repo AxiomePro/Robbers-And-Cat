@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://comy2yt4ohlej"]
+
+[ext_resource type="PackedScene" uid="uid://dc2550w03fwo3" path="res://Map/building_map.tscn" id="1_ph810"]
+
+[node name="BuildingMap" instance=ExtResource("1_ph810")]

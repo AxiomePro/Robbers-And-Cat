@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://p3hou3lsk5ko"
+path="res://.godot/imported/House Interior Rooms - Free Sample-16.obj-beda1fb0c70088fdb6f3603ebc8beda7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/House Interior Rooms - Free Sample-16.obj-beda1fb0c70088fdb6f3603ebc8beda7.mesh"]
+
+source_file="res://Building/Free Sample/House Interior Rooms - Free Sample-16.obj"
+dest_files=["res://.godot/imported/House Interior Rooms - Free Sample-16.obj-beda1fb0c70088fdb6f3603ebc8beda7.mesh", "res://.godot/imported/House Interior Rooms - Free Sample-16.obj-beda1fb0c70088fdb6f3603ebc8beda7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
